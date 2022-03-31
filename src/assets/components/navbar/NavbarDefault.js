@@ -1,5 +1,6 @@
 import React from 'react'
-import {Navbar, Nav, Container, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+import {Navbar, Nav, Container, NavDropdown, Form, FormControl, Button, DropdownButton, Dropdown} from 'react-bootstrap'
+import Cardname from '../../img/Header/Group 15.png'
 
 export const NavbarDefault = () => {
   return (
@@ -16,6 +17,14 @@ export const NavbarDefault = () => {
         />
         <Button variant="outline-success">Search</Button>
       </Form>
+
+    <div className='icon-nama d-flex'>
+    <img src={Cardname} alt="" />
+    <p>Unis Badri</p>
+    <DropdownButton id="dropdown-basic-button" title="">
+      <Dropdown.Item href="#/action-1">LogOut</Dropdown.Item>
+    </DropdownButton>
+    </div>
   </Container>
 </Navbar>
     </div>
