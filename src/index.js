@@ -2,7 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Layout} from './pages/Layout'
+// import {Layout} from './pages/Layout'
+
+// import component aris
+import Layout from './components/layout/Layout'
+
+document.title = 'Challenge 3'
 
 ReactDOM.render(
   <React.StrictMode>
